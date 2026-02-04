@@ -5,14 +5,11 @@
     font-family: "Segoe UI", sans-serif;
 }
 
-body {
-    background: 
-        linear-gradient(rgba(188, 42, 42, 0.55), rgba(0,0,0,0.55)),
-        url("../images/simple.jpg.jpg") no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
+body{
+background-color:#f4f4f4 ;
+color:#333;
+line-height:1.6
 }
-
 
 /* Header */
 header {
@@ -24,13 +21,13 @@ header {
 }
 
 .logo {
-    color: #fff;
+    color: #ffffff;
     font-size: 24px;
     font-weight: bold;
 }
 
 nav a {
-    color: #fff;
+    color: #ffffff;
     margin-left: 20px;
     text-decoration: none;
     transition: 0.3s;
@@ -43,8 +40,13 @@ nav a:hover {
 /* Hero */
 .hero {
     height: 80vh;
-    background-image: url('images/s.jpg'
-    background: linear-gradient(to right, #000, #333);
+    background: linear-gradient(to right, #000000, #16225c);
+        background: 
+        linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+        url("/static/images/cloths.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
     display: flex;
     flex-direction: column;
@@ -52,6 +54,41 @@ nav a:hover {
     align-items: center;
     text-align: center;
 }
+.about-hero {
+    min-height: 80vh;
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("/static/images/about.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-overlay {
+    padding: 60px;
+    max-width: 800px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.page-title {
+    color: #fff;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    color: #f1f1f1;
+    font-size: 18px;
+    line-height: 1.7;
+}
+.about-hero {
+    background-attachment: fixed;
+}
+
 
 .hero h1 {
     font-size: 52px;
@@ -158,3 +195,31 @@ footer {
         transform: translateZ(0px) translateY(0);
     }
 }
+.about-hero {
+    min-height: 80vh;
+    background: url("/static/images/about.webp.webp") center center / cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-overlay {
+    background: rgba(0, 0, 0, 0.55); /* dark overlay for text readability */
+    padding: 60px;
+    max-width: 800px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.page-title {
+    color: #fff;
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.about-text {
+    color: #f1f1f1;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
