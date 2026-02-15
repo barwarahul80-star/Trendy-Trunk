@@ -1,0 +1,76 @@
+{% extends "base.html" %}
+
+{% block content %}
+<style>
+    .categories {
+    padding: 80px 60px;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #222;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.category-card {
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+.category-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.category-card h3 {
+    padding: 20px;
+    font-size: 22px;
+    color: #111;
+}
+
+.category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+</style>
+<section class="categories">
+    <h2 class="section-title">Shop by Category</h2>
+
+    <div class="category-grid">
+        <div class="category-card">
+            <img src="/static/images/mens.jpeg" alt="Men Fashion">
+            <a href="styling/mens"><h3>Men</h3></a>
+        </div>
+
+        <div class="category-card">
+            <img src="/static/images/women.jpg" alt="Women Fashion">
+            <h3>Women</h3>
+        </div>
+
+        <div class="category-card">
+            <img src="/static/images/kids.jpg" alt="Kids Fashion">
+            <h3>Kids</h3>
+        </div>
+
+        <div class="category-card">
+            <img src="/static/images/accessories.jpg" alt="Accessories">
+            <h3>Accessories</h3>
+        </div>
+    </div>
+</section>
+
+{% endblock %}

@@ -1,11 +1,18 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2 class="page-title">About Trendy Trunk</h2>
+<div class="about-hero">
+    <video class="about-video" autoplay muted loop>
+        <source src="{{ url_for('static', filename='videos/about.mp4') }}" type="video/mp4">
+    </video>
+    <div class="about-overlay">
+        <h2 class="page-title">About Trendy Trunk</h2>
 
-<p class="about-text">
-Trendy Trunk is a modern clothing brand focused on delivering high-quality,
-stylish, and affordable fashion. Our mission is to empower individuals
-through confidence-driven apparel.
-</p>
+        <p class="about-text">
+        Trendy Trunk is a modern clothing brand focused on delivering high-quality,
+        stylish, and affordable fashion. Our mission is to empower individuals
+        through confidence-driven apparel.
+        </p>
+    </div>
+</div>
 {% endblock %}
